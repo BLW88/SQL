@@ -1,0 +1,25 @@
+My tack store database ordered by amount sold and sum sold
+
+create table Tack_Shop (id Integer PRIMARY KEY, item TEXT, brand TEXT, price INTEGER, inStock INTEGER, sold integer);
+
+Insert into tack_shop values (1, "saddle", "Rogue", 1000, 10, 8);
+Insert into tack_shop values (2, "saddle", "Bella", 2000, 15, 4);
+Insert into tack_shop values (3, "saddle", "Einstein", 750, 13, 6);
+Insert into tack_shop values (4, "bridle", "Rogue", 40, 4, 4);
+Insert into tack_shop values (5, "bridle", "Bella", 100, 13, 20);
+Insert into tack_shop values (6, "brilde", "Einstein", 250, 12, 1);
+Insert into tack_shop values (7, "helmet", "Rogue", 100, 30, 9);
+Insert into tack_shop values (8, "helmet", "Bella", 90, 34, 9);
+Insert into tack_shop values (9, "helmet", "Einstein", 66, 42, 80);
+Insert into tack_shop values (10, "boots", "Rogue", 335, 40, 40);
+Insert into tack_shop values (11, "boots", "Bella", 445, 65, 100);
+Insert into tack_shop values (12, "boots", "Einstein", 55, 9, 40);
+Insert into tack_shop values (13, "spurs", "Rogue", 20, 20, 20);
+Insert into tack_shop values (14, "spurs", "Bella", 34, 9, 80);
+Insert into tack_shop values (15, "spurs", "Einstein", 49, 120, 200);
+SELECT * FROM Tack_Shop;
+Select * from tack_shop order by (sold) desc; 
+Select sum (sold) from tack_shop; 
+
+
+
